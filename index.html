@@ -43,7 +43,7 @@
             
             function checkTime(i) {
               if (i < 10) {
-                i = "0" + i;
+                i = "0"+  i;
               }
               return i;
             }
@@ -54,16 +54,25 @@
               var m = today.getMinutes();
               var s = today.getSeconds();
               
+              
               // add a zero in front of numbers<10
               m = checkTime(m);
               s = checkTime(s);
-              document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
-              t = setTimeout(function() {
-                startTime()
-              }, 500);
+              if(h<12)
+              document.getElementById('time').innerHTML = h + ":" + m + ":" + s +  "(AM)";
+              else
+              document.getElementById('time').innerHTML = h + ":" + m + ":" + s + "(Good Afternon !)";
+             t = setTimeout(function()
+                            {
+                               startTime()
+                             },500);
+            
+              
+              
               
             }
             startTime();
+            
       
             
             
