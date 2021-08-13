@@ -35,13 +35,13 @@
   
         </table>
         <u><b>clock :</b></u>
-        <div id="time"></div>
+      <table border="5" bgcolor="skyblue"><tr><td><div id="time"></div></td></tr></table>
        
       
         <script language="javascript">
            
             
-            function checkTime(i) {
+            function checkTim(i) {
               if (i < 10) {
                 i = "0"+  i;
               }
@@ -56,8 +56,9 @@
               
               
               // add a zero in front of numbers<10
-              m = checkTime(m);
-              s = checkTime(s);
+              m = checkTim(m);
+              s = checkTim(s);
+              h = checkTim(h);
               if(h<12)
               document.getElementById('time').innerHTML = h + ":" + m + ":" + s +  "(AM)";
               else
@@ -169,7 +170,7 @@
         
         </script>
         
-        <div id="time"></div><div id="time"></div><div id="time"></div>
+        
         <Div Align=RIGHT><a href="https://www.facebook.com/aimen.chaib.1/" target="_blank"> <img src="facebook.jpg" width="40"></a></Div>
         <Div Align=RIGHT><a href="https://www.instagram.com/?hl=fr" target="_blank"> <img src="instagram.jpg" width="40"></a></Div>
        <center> <table >
