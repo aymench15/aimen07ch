@@ -8,23 +8,23 @@
             <tr><td>
                 <a href="file:///Users/pc/Desktop/mon%20site/site.html"><img src="programming.jpg" width=140></td></a>
             <td>
-       <center> <label><b>WELCOME TO AIMEN'S PERSONEL SITE<b></label></td><center>   </td>
-           <td>
-      <center> <label><b>WELCOME TO AIMEN'S PERSONEL SITE<b></label></td><center>   </td>
-          <td>
-     <center> <label><b>WELCOME TO AIMEN'S PERSONEL SITE<b></label></td><center>   </td>
-         <td>
-    <center> <label><b>WELCOME TO AIMEN'S PERSONEL SITE<b></label></td><center>   </td>
-        <td>
-   <center> <label><b>WELCOME TO AIMEN'S PERSONEL SITE<b></label></td><center>   </td>
-       <td>
-  <center> <label><b>WELCOME TO AIMEN'S PERSONEL SITE<b></label></td><center>   </td>
-      <td>
- <center> <label><b>WELCOME TO AIMEN'S PERSONEL SITE<b></label></td><center>   </td>
-     <td>
-<center> <label><b>WELCOME TO AIMEN'S PERSONEL SITE<b></label></td><center>   </td>
-    <td>
-<center> <label><b>WELCOME TO AIMEN'S PERSONEL SITE<b></label></td><center>   </td>
+                <center> <label><b>WELCOME TO AIMEN'S PERSONEL SITE<b></label></td><center>   </td>
+                    <td>
+               <center> <label><b>WELCOME TO AIMEN'S PERSONEL SITE<b></label></td><center>   </td>
+                   <td>
+              <center> <label><b>WELCOME TO AIMEN'S PERSONEL SITE<b></label></td><center>   </td>
+                  <td>
+             <center> <label><b>WELCOME TO AIMEN'S PERSONEL SITE<b></label></td><center>   </td>
+                 <td>
+            <center> <label><b>WELCOME TO AIMEN'S PERSONEL SITE<b></label></td><center>   </td>
+                <td>
+           <center> <label><b>WELCOME TO AIMEN'S PERSONEL SITE<b></label></td><center>   </td>
+               <td>
+          <center> <label><b>WELCOME TO AIMEN'S PERSONEL SITE<b></label></td><center>   </td>
+              <td>
+         <center> <label><b>WELCOME TO AIMEN'S PERSONEL SITE<b></label></td><center>   </td>
+             <td>
+         <center> <label><b>WELCOME TO AIMEN'S PERSONEL SITE<b></label></td><center>   </td>
  
            <td>
           
@@ -34,8 +34,37 @@
         </tr></td>
   
         </table>
-        
+        <u><b>clock :</b></u>
+        <div id="time"></div>
+       
+      
         <script language="javascript">
+           
+            
+            function checkTime(i) {
+              if (i < 10) {
+                i = "0" + i;
+              }
+              return i;
+            }
+
+            function startTime() {
+              var today = new Date();
+              var h = today.getHours();
+              var m = today.getMinutes();
+              var s = today.getSeconds();
+              
+              // add a zero in front of numbers<10
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+              t = setTimeout(function() {
+                startTime()
+              }, 500);
+              
+            }
+            startTime();
+      
             
             
             function verifier(form){
@@ -127,9 +156,11 @@
             }
             
         }
+     
+        
         </script>
         
-        
+        <div id="time"></div><div id="time"></div><div id="time"></div>
         <Div Align=RIGHT><a href="https://www.facebook.com/aimen.chaib.1/" target="_blank"> <img src="facebook.jpg" width="40"></a></Div>
         <Div Align=RIGHT><a href="https://www.instagram.com/?hl=fr" target="_blank"> <img src="instagram.jpg" width="40"></a></Div>
        <center> <table >
@@ -341,6 +372,11 @@
         
         <a href="https://www.facebook.com/aimen.chaib.1/"> <img src="facebook.jpg" width="40"></a>
         <a href="https://www.instagram.com/?hl=fr"> <img src="instagram.jpg" width="40"></a>
+        
+       
+        <div id="time"></div>
+        <div id="time"></div>
+
     
     
     
